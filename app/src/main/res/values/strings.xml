@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Gestion Clients Banque</string>
+    <string name="calculer">Calculer</string>
+    <string name="effacer">Effacer</string>
+    <string name="app_resume"></string>
+
+</resources>

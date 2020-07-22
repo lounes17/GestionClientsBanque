@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:src="@drawable/cpa"
+        android:id="@+id/cpaimg"
+        />
+
+    <EditText
+        android:id="@+id/nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cpaimg"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="48.5dp"
+        android:layout_marginTop="50px"
+        android:layout_marginRight="100px"
+        android:layout_toRightOf="@id/nomLabel"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nomLabel"
+        android:layout_alignBaseline="@id/nom"
+        android:text="Nom"
+        android:layout_marginLeft="50px"
+        android:layout_below="@id/cpaimg"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:id="@+id/prenom"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/prenomLabel"
+        android:layout_below="@id/nomLabel"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="50px"
+        android:layout_marginRight="100px"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/prenomLabel"
+        android:layout_alignBaseline="@id/prenom"
+        android:text="Prenom"
+        android:layout_below="@id/nom"
+        android:layout_marginLeft="50px"
+
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/montant"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/montantLabel"
+        android:layout_below="@id/prenomLabel"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="50px"
+        android:layout_marginRight="100px"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/montantLabel"
+        android:layout_alignBaseline="@id/montant"
+        android:text="Montant"
+        android:layout_below="@id/prenom"
+        android:layout_marginLeft="50px"
+
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:id="@+id/taux"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/tauxLabel"
+        android:layout_below="@id/montantLabel"
+        android:layout_marginLeft="50.5dp"
+        android:layout_marginTop="50px"
+        android:layout_marginRight="100px"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tauxLabel"
+        android:layout_alignBaseline="@id/taux"
+        android:text="taux"
+        android:layout_below="@id/montant"
+        android:layout_marginLeft="50px"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/duree"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/dureeLabel"
+        android:layout_below="@id/tauxLabel"
+        android:layout_marginLeft="42.5dp"
+        android:layout_marginTop="50px"
+        android:layout_marginRight="100px"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dureeLabel"
+        android:layout_alignBaseline="@id/duree"
+        android:text="Duree"
+        android:layout_below="@id/taux"
+        android:layout_marginLeft="50px"
+
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:id="@+id/resume"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/resumeLabel"
+        android:layout_below="@id/dureeLabel"
+        android:layout_marginLeft="42.5dp"
+        android:layout_marginTop="50px"
+        android:layout_marginRight="100px"
+        android:text="@string/app_resume"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resumeLabel"
+        android:layout_alignBaseline="@id/resume"
+        android:text="Resume"
+        android:layout_below="@id/duree"
+        android:layout_marginLeft="50px"
+
+        />
+
+
+    <Button
+        android:id="@+id/calculer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculer"
+        android:layout_below="@id/resume"
+        android:layout_margin="20dp"
+
+        />
+
+    <Button
+        android:id="@+id/effacer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/effacer"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/resume"
+        android:layout_margin="20dp"
+
+        />
+
+
+</RelativeLayout>
